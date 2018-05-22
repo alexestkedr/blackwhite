@@ -8,8 +8,6 @@ font-family: FontAwesome;
 src: url(../libs/fontawesome/webfonts/fa-solid-900.ttf)
 }
 
-html{ box-sizing:border-box;
-}
 
 body{
 	font-family: Arial, sans-serif;
@@ -18,10 +16,8 @@ body{
 
 
 .wrapper{
-	width: 1024px;
 	margin:0 auto;
-	padding-right: 100px;
-	padding-left:100px;	
+	
 }
 
 #header{
@@ -67,29 +63,35 @@ color: #C0C0BF;
 
 
 .menu__list{
-    text-align:center;
     background-color: #232323;
     padding: 10px;
+    
 }
 
 .menu__item{
     list-style:none;
     margin-right: 15px; 
     display: inline-block;
+    
+}
 
+.menu__item:last-child{
+	margin-right: 0;   /*убрал праввый отступ у последней ссылки*/
 }
 
 .menu__link{
     text-decoration:none;
     color:#C0C0BF;;
-    font-size: 20px;
     text-transform: uppercase;
     font-family: Arial, sans-serif;
+    font-size: 16px;
+    
     
 }
 
 .menu__link:hover{
 text-decoration: underline;
+
 }
 
       		/* main section START*/
@@ -179,21 +181,13 @@ padding:25px 20px;
 	
 }
 
-.left-article{
-	border: 1px solid black;
+.left-article, .middle-article{
+	
 	box-sizing: border-box;
-	padding:10px;
+	margin-right:30px;
+	
 }
 
-.middle-article{
-	border: 1px solid black;
-	padding:10px;
-}
-
-.left-article{
-	border: 1px solid black;
-	padding:10px;
-}
 
 .square{
 	width: 70px;
