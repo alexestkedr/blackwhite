@@ -11,12 +11,14 @@ src: url(../libs/fontawesome/webfonts/fa-solid-900.ttf)
 
 body{
 	font-family: Arial, sans-serif;
+
 }
 
 
 
 .wrapper{
 	margin:0 auto;
+
 	
 }
 
@@ -121,7 +123,7 @@ margin:30px auto;
 
 }	
 
-.main__left-block_top{
+.main__left-block-title{
 	font-size: 50px;
 	font-weight: bold;
 	color: #A1A3A1;
@@ -182,6 +184,10 @@ padding:25px 20px;
 	
 }
 
+.article__title{
+	text-transform:uppercase;
+	font-size:1.2rem;
+}
 
 .left-article, .middle-article{
 	
@@ -200,13 +206,20 @@ padding:25px 20px;
 	text-align:center;/* выровнил текст в квадрате по ценру по горизонтале*/
 	line-height: 70px;/* выровнил текст в квадрате по ценру по вертикале*/
 	color:  #DEDEDD;/* section articles START*/
+	transition: 0.4s ease-in-out;
+
 }
 
 .square:hover{
+	border-radius: 50%;
 	background: linear-gradient(#333333,#636363);
-
+	transition: 0.4s ease-in-out;
 }
 
+
+.square span:hover{
+	color:#a1a3a1;
+}
 			/* section pictures START*/
 
 .pictures{
@@ -233,7 +246,7 @@ padding:25px 20px;
 	position: relative;
   	z-index: 1;
     background: linear-gradient(#333333,#636363);
-
+	transition: 1s ease-in-out;
 }
 
 /* сделал внутреннюю рамку пунктиром*/
@@ -250,10 +263,6 @@ padding:25px 20px;
 
   }
 
-.pictures__block-img{
-	transition: 1s ease-in-out;
-}
-
 .pictures__block-img:hover{
 	transform:      scale(1.1); /* CSS3 */
  -moz-transform:    scale(1.1); /* Firefox */
@@ -263,4 +272,40 @@ padding:25px 20px;
   box-shadow: -7px 8px 19px -4px #808080;
 
 }
+
+
+			/* FOOTER START*/
+
+#main{
+	margin-bottom: 250px;
+}			
+
+#footer{
+background-color:#333333;	
+
+}
+
+.container{
+	padding: 40px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 1170px;
+	margin:0 auto;	
+	box-sizing: border-box;
+}
+
+.footer__copy, .footer__description  {
+    font-size: 0.875rem;
+    color: #cecece;
+    margin-left: -40px;
+    margin-top:-20px;
+     
+}
+
+.footer__description{
+    margin-right:-40px;
+     
+}
+
 
