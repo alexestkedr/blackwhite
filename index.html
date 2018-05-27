@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+<!-- прописали класс, тк добавим ночную тему для body -->
+  <body class="#">
+  	<button>Dark theme</button>
+
   	<div class="wrapper">
   	  <header id="header">
   	    <div class="container">
@@ -120,62 +123,65 @@
 					<!-- section pictures START -->
 
 		
-		
 		<div class="pictures">
 
 			<div class="pictures__block pictures__first">
+				<div class="pictures-wrapper">
 					<div class="pictures__block-img"></div>
 
-				    <h3>Loerm ipsum numquam fugiat</h3>
-					<p> Officia suscipit eos non consequatur, culpa porro tempore dolores blanditiis  Similique, ipsam!</p>
+				    <h3 class="pictures__block-title">Loerm ipsum numquam fugiat</h3>
+					<p class="pictures__block-desc"> Officia suscipit eos non consequatur, culpa porro tempore dolores blanditiis  Similique, ipsam!</p>
 
 					<p class="readmore-wrapper">
     	  				<a href="#" class="readmore">Read more</a>
     	  	    	</p>
+    	  	    </div>
 
 			</div>
 	    
 	   
 			<div class="pictures__block pictures__second">
+				<div class="pictures-wrapper">
 					<div class="pictures__block-img"></div>
 
-					<h3>Loerm ipsum numquam fugiat</h3>
-					<p> Officia suscipit eos non consequatur, culpa porro tempore dolores blanditiis  Similique, ipsam!</p>
+					<h3 class="pictures__block-title">Loerm ipsum numquam fugiat</h3>
+					<p class="pictures__block-desc"> Officia suscipit eos non consequatur, culpa porro tempore dolores blanditiis  Similique, ipsam!</p>
 
 					<p class="readmore-wrapper">
     	  				<a href="#" class="readmore">Read more</a>
     	  	    	</p>
-
+				</div>
 			</div>
 
 			<div class="pictures__block pictures__third">
+				<div class="pictures-wrapper">
 					<div class="pictures__block-img"></div>
 
-					<h3>Loerm ipsum numquam fugiat</h3>
-					<p> Officia suscipit eos non consequatur, culpa porro tempore dolores blanditiis  Similique, ipsam!</p>
+					<h3 class="pictures__block-title">Loerm ipsum numquam fugiat</h3>
+					<p class="pictures__block-desc"> Officia suscipit eos non consequatur, culpa porro tempore dolores blanditiis  Similique, ipsam!</p>
 
 					<p class="readmore-wrapper">
     	  				<a href="#" class="readmore">Read more</a>
     	  	    	</p>
-
+				</div>
 			</div>
 
 			<div class="pictures__block pictures__four">
+				<div class="pictures-wrapper">
 					<div class="pictures__block-img"></div>
 
-					<h3>Loerm ipsum numquam fugiat</h3>
-					<p> Officia suscipit eos non consequatur, culpa porro tempore dolores blanditiis  Similique, ipsam!</p>
+					<h3 class="pictures__block-title">Loerm ipsum numquam fugiat</h3>
+					<p class="pictures__block-desc"> Officia suscipit eos non consequatur, culpa porro tempore dolores blanditiis  Similique, ipsam!</p>
 
 					<p class="readmore-wrapper">
     	  				<a href="#" class="readmore">Read more</a>
     	  	    	</p>
-
+    	  	    </div>
 			</div>
 
 		</div><!-- picures END -->
      </div><!-- main END -->
       
-
 
 					<!--  FOOTER START -->
 
@@ -194,15 +200,15 @@
   	 	  </div><!-- footer__container  -->
 
   	 </footer><!-- FOOTER END  -->
-	
-
-
    </div><!-- wrapper END  -->
-  
+ 
+<!-- подключили jquery локально   -->
+<script src="libs/jquery-3.3.1.min.js"></script>
 
+ <!-- подключили jquery через сайт cdn.js   -->
+ <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script> -->
 
-   						
-
+  <!-- подключил свой главный main.js Всегда должен в списке идти последним ближе к BODY  -->
   <script src="js/main.js"></script>
  </body>
 </html>

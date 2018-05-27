@@ -1,3 +1,4 @@
+/*через @font-face - локальное подключение шрифтов*/
 @font-face{
 font-family: 'Dancing Script';
 src: url(../fonts/DancingScript-Regular.ttf) ;
@@ -8,12 +9,25 @@ font-family: FontAwesome;
 src: url(../libs/fontawesome/webfonts/fa-solid-900.ttf)
 }
 
+/* через @import - подключение шрифтов на CSS-странице*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
 
 body{
-	font-family: Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+	line-height: 1.2;
 
+	transition: all 0.4s ease-in; /*сделали для ночной темы*/
 }
 
+ /*сделали для ночной темы*/
+.night{
+	background-color: black;
+	color:white;
+
+}
 
 
 .wrapper{
@@ -246,7 +260,7 @@ padding:25px 20px;
 	position: relative;
   	z-index: 1;
     background: linear-gradient(#333333,#636363);
-	transition: 1s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
 
 /* сделал внутреннюю рамку пунктиром*/
@@ -300,12 +314,22 @@ background-color:#333333;
     color: #cecece;
     margin-left: -40px;
     margin-top:-20px;
+    
      
 }
 
 .footer__description{
     margin-right:-40px;
-     
+       
+}
+
+
+@media (max-width:1200px){
+	.footer__copy,.footer__description,.pictures__block{
+		padding-left: 10px;
+    	padding-right: 10px;
+	}
+
 }
 
 
